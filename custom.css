@@ -20,9 +20,12 @@
     height: 140%;
     background-repeat: no-repeat;
   }
-
-
 }
+
+#resume a{
+  color: black;
+}
+
 
 h1{
   color: white;

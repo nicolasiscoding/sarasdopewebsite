@@ -11,7 +11,17 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="scripts/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="scripts/typed.js"></script>
   <script type="text/javascript" src="scripts/custom.js"></script>
+  <script>
+    $(function(){
+        $("#typeTheNightAway").typed({
+          strings: ["Hi, I'm Sara Marino!"],
+          typeSpeed: 80,
+          showCursor: false
+        });
+    });
+  </script>
 
 </head>
 <body>
@@ -19,7 +29,7 @@
   <div>
     <div class = "container col m12">
       <div class = "center-align">
-        <h1 class="thin">Hey! I'm Sara!</h1>
+        <h1 id="typeTheNightAway" class="thin"></h1>
       </div>
     </div>
 
@@ -41,18 +51,22 @@
 
     <div class = "container">
       <div class = "page" id="home">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis neque a arcu ultricies rhoncus. Quisque gravida pulvinar odio pretium ornare. Fusce mollis lorem augue, dictum interdum dui mattis hendrerit. Donec a urna sit amet odio condimentum tincidunt eu tincidunt lectus. Nunc id est nec urna porta gravida. In dictum, leo non suscipit luctus, erat felis dictum est, ac rutrum elit turpis vitae elit. In pulvinar ullamcorper dolor, at fringilla eros dapibus nec. Nunc fringilla eget felis nec feugiat. Ut a hendrerit diam, id tincidunt ante. Etiam sodales id arcu non bibendum. Aenean nunc lorem, iaculis non ullamcorper eu, consequat sed lectus.
-            Aliquam tellus lacus, vestibulum et turpis nec, commodo tempus erat. Nam at lacus accumsan sapien blandit vulputate. Fusce semper risus at diam porta semper id nec massa. Integer eget facilisis neque. Vestibulum id odio mauris. Aenean posuere varius mi eget malesuada. Nulla posuere lacus vitae ante lobortis, eu vehicula mi dignissim. Fusce congue gravida gravida. Duis dictum, augue eget condimentum laoreet, nisi lectus luctus mi, id congue ex diam quis urna. Sed tempus purus a sapien consectetur, et pellentesque justo viverra. Vivamus dignissim ipsum nec lectus vehicula rhoncus. Proin ornare fringilla blandit. Duis commodo, turpis non malesuada pharetra, orci velit consectetur sapien, eu euismod dui odio id metus. Suspendisse tincidunt sit amet arcu hendrerit condimentum.
-              Sed condimentum venenatis</p>
+        <div class="row">
+            <img class = "col m7" src="imgs/sara.jpg"></img>
+          <div class = "col m5">
+            <span style="text-align: justify;">
+            <p style="padding-right: 20px;">Hi, my name is Sara! I currently work for the New York Times Editing Center as a News Service Clerk. Along with working for the editing center, I  am currently being trained to write columns for the New York Times. I also attend the University of Florida and write for their newspaper (The Independent Florida Alligator) on a weekly basis.</p>
+          </span>
+          </div>
+        </div>
       </div>
       <div class="page" id="articles">
         <h3 class="cyan accent-4 thin" style="text-align: center;">These are some of my articles..</h3>
-
-        <table class = "highlight centered responsive-table" id="articleList">
-        </table>
+        <div class = "highlight centered responsive-table" id="articleList">
+        </div>
       </div>
       <div class="page" id="resume">
-        <p>Resume</p>
+        <a href="https://drive.google.com/open?id=0B5XmWBsxWq_dUmJGSG5SNXJvdzQ"><h3 class="cyan accent-4 thin" style="text-align: center;">Checkout my resume!</h3></a>
       </div>
       <div class = "page" id="photography">
         <p>Photography page!</p>
