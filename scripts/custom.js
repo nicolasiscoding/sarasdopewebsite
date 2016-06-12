@@ -44,6 +44,13 @@ $(document).ready(function(){
         //fix dates
         for(var i = 0; i < data.extractorData.data[0].group.length; i++)
         {
+          if((data.extractorData.data[0].group[i][ 'ASSETTEXT DATE' ][0].text).indexOf("hrs") >=0)
+          {
+            var date = new Date();
+            data.extractorData.data[0].group[i].fixedDate = date;
+            continue;
+          }
+
           var date = new Date(data.extractorData.data[0].group[i][ 'ASSETTEXT DATE' ][0].text);
           data.extractorData.data[0].group[i].fixedDate = date;
         }
